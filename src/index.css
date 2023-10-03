@@ -9,8 +9,17 @@ table {
   border-collapse: collapse;
 
   padding: 8px;
-  border: 1px solid #ddd;
 }
+.main-table{
+  overflow:auto;
+  max-height: 400px;
+}
+
+thead th {
+  position: sticky;
+  top: 0px;
+}
+
 .no-select {
   user-select: none;
 }

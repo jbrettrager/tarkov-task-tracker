@@ -9,16 +9,19 @@ export default function MainTable(props) {
     const searchText = props.props[0]
     const playerLevel = props.props[1]
     const traders = props.props[2]
+    const repArray = props.props[3]
+
     return (
         <div>
             <table className="main-table no-select">
-                <tr className="table-title">
+                <thead className="table-title">
                   <th className="title">Trader</th>
                   <th>Task</th>
                   <th>Map</th>
                   <th>Objectives</th>
                   <th>Wiki Link</th>
-                </tr>
+                  <th>Completed?</th>
+                </thead>
                 {taskList.filter(task => task.minPlayerLevel <= playerLevel)
                 .filter(task => {
                     if (task.trader.name === "Prapor") {
@@ -55,7 +58,7 @@ export default function MainTable(props) {
                     }
                     else return task
                 })
-                .map(task => <Task task={task}/>)}
+                .map(task => <Task task={task} rep={repArray}/>)}
               </table>
         </div>
     )

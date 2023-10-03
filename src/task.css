@@ -1,12 +1,12 @@
 
   th {
-    background-color: #8d8d8d;
+    background-color: #8d8d8da9;
     color: whitesmoke;
     padding: 8px;
   }
   
   td {
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     padding: 8px;
     text-align: center;
   }

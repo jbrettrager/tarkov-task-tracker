@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import MainTable from "./MainTable.jsx";
 import Header from "./Header.jsx";
+import createTaskDb from "./createTaskDb";
 
 function App() {
   const [searchText, setSearchText] = useState("");
@@ -17,6 +18,32 @@ function App() {
     true,
     true,
   ]);
+  const [praporRep, setPraporRep] = useState(0.0);
+  const [therapistRep, setTherapistRep] = useState(0.0);
+  const [skierRep, setSkierRep] = useState(0.0);
+  const [fenceRep, setFenceRep] = useState(0.0);
+  const [peacekeeperRep, setPeacekeeperRep] = useState(0.0);
+  const [ragmanRep, setRagmanRep] = useState(0.0);
+  const [mechanicRep, setMechanicRep] = useState(0.0);
+  const [jaegerRep, setJaegerRep] = useState(0.0);
+  const repArray = [
+    praporRep,
+    setPraporRep,
+    therapistRep,
+    setTherapistRep,
+    skierRep,
+    setSkierRep,
+    fenceRep,
+    setFenceRep,
+    peacekeeperRep,
+    setPeacekeeperRep,
+    ragmanRep,
+    setRagmanRep,
+    mechanicRep,
+    setMechanicRep,
+    jaegerRep,
+    setJaegerRep,
+  ];
   return (
     <div>
       <Header
@@ -26,10 +53,11 @@ function App() {
           playerLevel,
           setPlayerLevel,
           traders,
-          setTraders
+          setTraders,
+          repArray,
         ]}
       />
-      <MainTable props={[searchText, playerLevel, traders]}/>
+      <MainTable props={[searchText, playerLevel, traders, repArray]} />
     </div>
   );
 }

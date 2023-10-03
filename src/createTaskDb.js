@@ -48,10 +48,20 @@ export default async function createTaskDb() {
                   }
                   quantity
                 }
+                traderStanding{
+                  trader{name}
+                  standing
+                }
               }
               trader{
                 name
                 imageLink
+              }
+              failureOutcome{
+                traderStanding{
+                  trader{name}
+                  standing
+                }
               }
               map{
                 name
@@ -62,7 +72,14 @@ export default async function createTaskDb() {
                   name
                 }
               }
-              
+              traderRequirements{
+                requirementType
+                trader{
+                  name
+                  normalizedName
+                }
+                value
+              }
             }
             
             
