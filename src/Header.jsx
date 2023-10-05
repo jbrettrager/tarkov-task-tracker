@@ -18,7 +18,6 @@ import rank15Icon from "./img/15.png";
 import rank16Icon from "./img/16.png";
 
 export default function Header(props) {
-  console.log(props);
   const [isMinimized, setIsMinimized] = useState(false);
   const searchText = props.props[0];
   const setSearchText = props.props[1];
@@ -26,7 +25,7 @@ export default function Header(props) {
   const setPlayerLevel = props.props[3];
   const traders = props.props[4];
   const setTraders = props.props[5];
-  const repArray = props.props[6]; //prapor, therapist, skier, fence, peacekeeper, ragman, mechanic, jaeger use 0 and evens for the values
+  const repArray = props.props[6];
   const [levelIcon, setLevelIcon] = useState(rank1Icon);
   function handleSearch(e) {
     setSearchText(e.target.value);
@@ -157,93 +156,106 @@ export default function Header(props) {
           </div>
           <div className="player-level no-select">{playerLevel}</div>
         </div>
-        <div className="trader-filter">
-          <div className="image-container">
-            <div className="trader-container">
-              <img
-                onClick={handleClickTrader}
-                src="https://assets.tarkov.dev/54cb50c76803fa8b248b4571.webp"
-                alt="prapor image"
-                className={traders[0] ? "prapor" : "prapor unselected"}
-              ></img>
-              <div className="trader-rep">{repArray[0]}</div>
+        <div className="trader-filter-box">
+          <div className="trader-filter">
+            <div className="image-container">
+              <div className="trader-container">
+                <img
+                  onClick={handleClickTrader}
+                  src="https://assets.tarkov.dev/54cb50c76803fa8b248b4571.webp"
+                  alt="prapor image"
+                  className={traders[0] ? "prapor" : "prapor unselected"}
+                ></img>
+                <div className="trader-rep">{repArray[0]}</div>
+              </div>
+              <div className="trader-container">
+                <img
+                  onClick={handleClickTrader}
+                  src="https://assets.tarkov.dev/54cb57776803fa99248b456e.webp"
+                  alt="therapist image"
+                  className={traders[1] ? "therapist" : "therapist unselected"}
+                ></img>
+                <div className="trader-rep">{repArray[2]}</div>
+              </div>
+              <div className="trader-container">
+                <img
+                  onClick={handleClickTrader}
+                  src="https://assets.tarkov.dev/579dc571d53a0658a154fbec.webp"
+                  alt="fence image"
+                  className={traders[2] ? "fence" : "fence unselected"}
+                ></img>
+                <div className="trader-rep">{repArray[6]}</div>
+              </div>
+              <div className="trader-container">
+                <img
+                  onClick={handleClickTrader}
+                  src="https://assets.tarkov.dev/58330581ace78e27b8b10cee.webp"
+                  alt="skier image"
+                  className={traders[3] ? "skier" : "skier unselected"}
+                ></img>
+                <div className="trader-rep">{repArray[4]}</div>
+              </div>
+              <div className="trader-container">
+                <img
+                  onClick={handleClickTrader}
+                  src="https://assets.tarkov.dev/5935c25fb3acc3127c3d8cd9.webp"
+                  alt="peacekeeper image"
+                  className={
+                    traders[4] ? "peacekeeper" : "peacekeeper unselected"
+                  }
+                ></img>
+                <div className="trader-rep">{repArray[8]}</div>
+              </div>
+              <div className="trader-container">
+                <img
+                  onClick={handleClickTrader}
+                  src="https://assets.tarkov.dev/5a7c2eca46aef81a7ca2145d.webp"
+                  alt="mechanic image"
+                  className={traders[5] ? "mechanic" : "mechanic unselected"}
+                ></img>
+                <div className="trader-rep">{repArray[12]}</div>
+              </div>
+              <div className="trader-container">
+                <img
+                  onClick={handleClickTrader}
+                  src="https://assets.tarkov.dev/5ac3b934156ae10c4430e83c.webp"
+                  alt="ragman image"
+                  className={traders[6] ? "ragman" : "ragman unselected"}
+                ></img>
+                <div className="trader-rep">{repArray[10]}</div>
+              </div>
+              <div className="trader-container">
+                <img
+                  onClick={handleClickTrader}
+                  src="https://assets.tarkov.dev/5c0647fdd443bc2504c2d371.webp"
+                  alt="jaeger image"
+                  className={traders[7] ? "jaeger" : "jaeger unselected"}
+                ></img>
+                <div className="trader-rep">{repArray[14]}</div>
+              </div>
+              <div className="trader-container">
+                <img
+                  onClick={handleClickTrader}
+                  src="https://assets.tarkov.dev/638f541a29ffd1183d187f57.webp"
+                  alt="lightkeeper image"
+                  className={
+                    traders[8] ? "lightkeeper" : "lightkeeper unselected"
+                  }
+                ></img>
+                <div className="trader-rep">?</div>
+              </div>
             </div>
-            <div className="trader-container">
-              <img
-                onClick={handleClickTrader}
-                src="https://assets.tarkov.dev/54cb57776803fa99248b456e.webp"
-                alt="therapist image"
-                className={traders[1] ? "therapist" : "therapist unselected"}
-              ></img>
-              <div className="trader-rep">{repArray[2]}</div>
-            </div>
-            <div className="trader-container">
-              <img
-                onClick={handleClickTrader}
-                src="https://assets.tarkov.dev/579dc571d53a0658a154fbec.webp"
-                alt="fence image"
-                className={traders[2] ? "fence" : "fence unselected"}
-              ></img>
-              <div className="trader-rep">{repArray[6]}</div>
-            </div>
-            <div className="trader-container">
-              <img
-                onClick={handleClickTrader}
-                src="https://assets.tarkov.dev/58330581ace78e27b8b10cee.webp"
-                alt="skier image"
-                className={traders[3] ? "skier" : "skier unselected"}
-              ></img>
-              <div className="trader-rep">{repArray[4]}</div>
-            </div>
-            <div className="trader-container">
-              <img
-                onClick={handleClickTrader}
-                src="https://assets.tarkov.dev/5935c25fb3acc3127c3d8cd9.webp"
-                alt="peacekeeper image"
-                className={
-                  traders[4] ? "peacekeeper" : "peacekeeper unselected"
-                }
-              ></img>
-              <div className="trader-rep">{repArray[8]}</div>
-            </div>
-            <div className="trader-container">
-              <img
-                onClick={handleClickTrader}
-                src="https://assets.tarkov.dev/5a7c2eca46aef81a7ca2145d.webp"
-                alt="mechanic image"
-                className={traders[5] ? "mechanic" : "mechanic unselected"}
-              ></img>
-              <div className="trader-rep">{repArray[12]}</div>
-            </div>
-            <div className="trader-container">
-              <img
-                onClick={handleClickTrader}
-                src="https://assets.tarkov.dev/5ac3b934156ae10c4430e83c.webp"
-                alt="ragman image"
-                className={traders[6] ? "ragman" : "ragman unselected"}
-              ></img>
-              <div className="trader-rep">{repArray[10]}</div>
-            </div>
-            <div className="trader-container">
-              <img
-                onClick={handleClickTrader}
-                src="https://assets.tarkov.dev/5c0647fdd443bc2504c2d371.webp"
-                alt="jaeger image"
-                className={traders[7] ? "jaeger" : "jaeger unselected"}
-              ></img>
-              <div className="trader-rep">{repArray[14]}</div>
-            </div>
-            <div className="trader-container">
-              <img
-                onClick={handleClickTrader}
-                src="https://assets.tarkov.dev/638f541a29ffd1183d187f57.webp"
-                alt="lightkeeper image"
-                className={
-                  traders[8] ? "lightkeeper" : "lightkeeper unselected"
-                }
-              ></img>
-              <div className="trader-rep">?</div>
-            </div>
+          </div>
+          <div className="name-popups">
+            <div className="trader-name-popup prapor-name">Prapor</div>
+            <div className="trader-name-popup therapist">Therapist</div>
+            <div className="trader-name-popup fence">Fence</div>
+            <div className="trader-name-popup skier">Skier</div>
+            <div className="trader-name-popup peacekeeper">Peacekeeper</div>
+            <div className="trader-name-popup mechanic">Mechanic</div>
+            <div className="trader-name-popup ragman">Ragman</div>
+            <div className="trader-name-popup jaeger">Jaeger</div>
+            <div className="trader-name-popup lightkeeper">Lightkeeper</div>
           </div>
         </div>
       </div>

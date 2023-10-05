@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import MainTable from "./MainTable.jsx";
 import Header from "./Header.jsx";
+import taskDb from './taskDb.json'
 import createTaskDb from "./createTaskDb";
 
 function App() {
   const [searchText, setSearchText] = useState("");
   const [playerLevel, setPlayerLevel] = useState(1);
+  const [completedTasks, setCompletedTasks] = useState([])
   const [traders, setTraders] = useState([
     true,
     true,
@@ -44,6 +46,7 @@ function App() {
     jaegerRep,
     setJaegerRep,
   ];
+
   return (
     <div>
       <Header
@@ -57,7 +60,16 @@ function App() {
           repArray,
         ]}
       />
-      <MainTable props={[searchText, playerLevel, traders, repArray]} />
+      <MainTable
+        props={[
+          searchText,
+          playerLevel,
+          traders,
+          repArray,
+          completedTasks,
+          setCompletedTasks
+        ]}
+      />
     </div>
   );
 }
