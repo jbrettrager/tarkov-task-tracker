@@ -8,7 +8,43 @@
 }
 
 h2 {
+  font-family: bender;
   text-align: center;
+}
+
+li {
+  list-style-type:square;
+  padding: 10px;
+}
+
+.map-filter {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border:3px solid #8f8e8e;
+  border-right:none;
+  max-width: 8rem;
+  transform: translate(1600%, -100%);
+}
+
+.map-filter-2{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border:3px solid #8f8e8e;
+  border-left:none;
+  max-width: 8rem;
+  transform: translate(1700%, -200%);
+}
+
+.map-filter-3 {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border:3px solid #8f8e8e;
+  border-bottom:none;
+  max-width: 8rem;
+  transform: translate(1610%, -1530%);
 }
 
 .current-level {
@@ -90,6 +126,7 @@ h2 {
   width: 50rem;
   border: 4px solid #8f8e8e;
   justify-content: space-between;
+  box-shadow: #1e1e1e;
 }
 
 .name-popups {

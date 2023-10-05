@@ -2,13 +2,26 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import MainTable from "./MainTable.jsx";
 import Header from "./Header.jsx";
-import taskDb from './taskDb.json'
+import taskDb from "./taskDb.json";
 import createTaskDb from "./createTaskDb";
 
 function App() {
   const [searchText, setSearchText] = useState("");
+  const [maps, setMaps] = useState({
+    "Factory": "checked",
+    "Night Factory": "checked",
+    "Customs": "checked",
+    "Woods": "checked",
+    "Shoreline": "checked",
+    "Interchange": "checked",
+    "Reserve": "checked",
+    "Lighthouse": "checked",
+    "The Lab": "checked",
+    "Streets of Tarkov": "checked",
+    "Any": "checked"
+  });
   const [playerLevel, setPlayerLevel] = useState(1);
-  const [completedTasks, setCompletedTasks] = useState([])
+  const [completedTasks, setCompletedTasks] = useState([]);
   const [traders, setTraders] = useState([
     true,
     true,
@@ -58,6 +71,7 @@ function App() {
           traders,
           setTraders,
           repArray,
+          maps, setMaps
         ]}
       />
       <MainTable
@@ -67,7 +81,8 @@ function App() {
           traders,
           repArray,
           completedTasks,
-          setCompletedTasks
+          setCompletedTasks,
+          maps
         ]}
       />
     </div>

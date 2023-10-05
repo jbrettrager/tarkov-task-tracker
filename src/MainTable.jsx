@@ -12,6 +12,7 @@ export default function MainTable(props) {
   const repArray = props.props[3];
   const completedTasks = props.props[4];
   const setCompletedTasks = props.props[5];
+  const maps = props.props[6];
 
   function checkLocked(task) {
     let locked = true;
@@ -31,7 +32,7 @@ export default function MainTable(props) {
         }
       }
       if (completedObjectives == objectiveCount) {
-        locked = false
+        locked = false;
       }
     } else locked = false;
     return locked;
@@ -45,8 +46,7 @@ export default function MainTable(props) {
           <th>Task</th>
           <th>Map</th>
           <th>Objectives</th>
-          <th>Wiki Link</th>
-          <th>Completed?</th>
+          <th>Rewards</th>
         </thead>
         {taskList
           .filter((task) => task.minPlayerLevel <= playerLevel)
@@ -101,8 +101,16 @@ export default function MainTable(props) {
               if (taskMatch == false) return task;
             } else return task;
           })
-          .filter(task => {
-            if (!checkLocked(task)) return task
+          .filter((task) => {
+            if (!checkLocked(task)) return task;
+          })
+          .filter((task) => {
+            if (task.map.name !== undefined) {
+              if (maps[task.map.name] === "checked") return task
+            }
+            else {
+              if (maps["Any"] === "checked") return task
+            }
           })
           .map((task) => (
             <Task

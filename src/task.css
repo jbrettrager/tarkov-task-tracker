@@ -16,7 +16,12 @@
   }
   
   a {
-    color: lightblue;
+
+    color: rgb(208, 230, 173);
+  }
+
+  .trader {
+    width: 7rem;
   }
   .trader img {
     width: 5rem;
@@ -25,3 +30,76 @@
   .no-select {
     user-select: none;
   }
+
+  .objectives {
+    text-align: left;
+    max-width: 10rem;
+  }
+
+  .task-title {
+    max-width: 6rem;
+  }
+
+  .task-title img {
+    max-width: 100%;
+    margin-top: 5px;
+  }
+
+  .rewards {
+    width: 20rem;
+  }
+
+  .trader-rewards-box {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .reward-trader-image {
+    width: 6rem;
+    margin-left: 1rem;
+    margin-right:1rem;
+    border: 2px ridge #383838
+  }
+
+  .rep-value {
+    position: absolute;
+    transform: translate(16%, -120%);
+    background: rgba(0, 0, 0, 0.726);
+    width: 6.2rem;
+  }
+
+  .rep-value.negative {
+    color:red;
+  }
+
+  .item-rewards-box {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .reward-item-image {
+    max-height: 8rem;
+    margin-left: 1rem;
+    margin-right:1rem;
+  }
+
+ .needed-keys {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  margin-top:3rem;
+ }
+
+ .kappa-required {
+  color:red;
+ }
+
+ .key {
+  margin-left: 2rem;
+  margin-right: 2rem;
+ }

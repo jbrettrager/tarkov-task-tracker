@@ -74,7 +74,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [],
         "traderRequirements": []
     },
@@ -155,7 +155,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [],
         "traderRequirements": []
     },
@@ -230,7 +230,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [],
         "traderRequirements": []
     },
@@ -402,7 +402,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -481,7 +481,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -570,7 +570,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -643,7 +643,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -791,7 +791,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -864,7 +864,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -937,7 +937,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -1085,7 +1085,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -1332,7 +1332,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -1389,7 +1389,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -1521,7 +1521,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -1586,7 +1586,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -1643,7 +1643,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -1811,7 +1811,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -1876,7 +1876,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -1957,7 +1957,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -2450,7 +2450,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [],
         "traderRequirements": []
     },
@@ -2634,7 +2634,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -2724,7 +2724,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -3149,7 +3149,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -3303,7 +3303,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -3493,7 +3493,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -3570,7 +3570,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -3657,7 +3657,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -3752,7 +3752,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -3962,7 +3962,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -4103,7 +4103,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -4184,7 +4184,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -4826,7 +4826,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -4883,7 +4883,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -4970,7 +4970,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -5069,7 +5069,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -5790,7 +5790,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -5904,7 +5904,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -6663,7 +6663,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -6711,7 +6711,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -6765,7 +6765,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -7414,7 +7414,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -7674,7 +7674,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -7722,7 +7722,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -7827,7 +7827,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -8194,7 +8194,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -8293,7 +8293,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -8396,7 +8396,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -9000,7 +9000,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -9315,7 +9315,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -9488,7 +9488,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -10119,7 +10119,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -10218,7 +10218,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -10343,7 +10343,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -10384,7 +10384,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -10838,7 +10838,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [],
         "traderRequirements": []
     },
@@ -11596,7 +11596,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -11661,7 +11661,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -12311,7 +12311,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -12702,7 +12702,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -14011,7 +14011,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -14181,7 +14181,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [],
         "traderRequirements": []
     },
@@ -14495,7 +14495,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -14990,7 +14990,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -15055,7 +15055,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -15172,7 +15172,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -15777,7 +15777,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -16224,7 +16224,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -16421,7 +16421,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -16551,7 +16551,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -16642,7 +16642,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -16789,7 +16789,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -17325,7 +17325,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -17528,7 +17528,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -17756,7 +17756,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -17839,7 +17839,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -17920,7 +17920,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -18088,7 +18088,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -18179,7 +18179,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -18252,7 +18252,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -18343,7 +18343,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -18426,7 +18426,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -18517,7 +18517,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -18565,7 +18565,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -18713,7 +18713,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -18797,7 +18797,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -18850,7 +18850,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -19097,7 +19097,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -19270,7 +19270,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -19343,7 +19343,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -19434,7 +19434,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -19553,7 +19553,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -19724,7 +19724,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -19868,7 +19868,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -19925,7 +19925,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -20128,7 +20128,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -20214,7 +20214,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -20386,7 +20386,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -20535,7 +20535,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -20671,7 +20671,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -20783,7 +20783,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -20947,7 +20947,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -21028,7 +21028,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -21249,7 +21249,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -21709,7 +21709,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -21810,7 +21810,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -21973,7 +21973,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -22214,7 +22214,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -22457,7 +22457,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -22594,7 +22594,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -22699,7 +22699,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -22794,7 +22794,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -22867,7 +22867,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -23410,7 +23410,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -23467,7 +23467,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -23629,7 +23629,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -23793,7 +23793,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -24129,7 +24129,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -24275,7 +24275,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -24436,7 +24436,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -24480,7 +24480,7 @@
                 "optional": false
             }
         ],
-        "neededKeys": null,
+        "neededKeys": [],
         "startRewards": {
             "items": []
         },
@@ -24530,7 +24530,7 @@
                 "optional": false
             }
         ],
-        "neededKeys": null,
+        "neededKeys": [],
         "startRewards": {
             "items": []
         },
@@ -24749,7 +24749,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -24935,7 +24935,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25072,7 +25072,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25145,7 +25145,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25216,7 +25216,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25289,7 +25289,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25354,7 +25354,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25427,7 +25427,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25492,7 +25492,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25621,7 +25621,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25720,7 +25720,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25804,7 +25804,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25911,7 +25911,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -25991,7 +25991,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -26080,7 +26080,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -26177,7 +26177,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -26265,7 +26265,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -26306,7 +26306,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -26484,7 +26484,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -26588,7 +26588,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -27000,7 +27000,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -27346,7 +27346,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -27403,7 +27403,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -27571,7 +27571,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -27627,7 +27627,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -27707,7 +27707,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -27798,7 +27798,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -27918,7 +27918,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [
             {
                 "task": {
@@ -27972,7 +27972,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [],
         "traderRequirements": [
             {
@@ -28023,7 +28023,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [],
         "traderRequirements": [
             {
@@ -28080,7 +28080,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [],
         "traderRequirements": [
             {
@@ -28131,7 +28131,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [],
         "traderRequirements": [
             {
@@ -28160,7 +28160,7 @@
                 "optional": false
             }
         ],
-        "neededKeys": null,
+        "neededKeys": [],
         "startRewards": {
             "items": []
         },
@@ -28182,7 +28182,7 @@
         "failureOutcome": {
             "traderStanding": []
         },
-        "map": null,
+        "map": [],
         "taskRequirements": [],
         "traderRequirements": [
             {

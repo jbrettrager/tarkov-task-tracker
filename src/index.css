@@ -1,17 +1,16 @@
 body {
+  font-family: bender;
   background-color: #1e1e1e;
   color: #948362;
 }
 
-
 table {
   width: 100%;
   border-collapse: collapse;
-
   padding: 8px;
 }
-.main-table{
-  overflow:auto;
+.main-table {
+  overflow: auto;
   max-height: 400px;
 }
 
@@ -23,3 +22,4 @@ thead th {
 .no-select {
   user-select: none;
 }
+
