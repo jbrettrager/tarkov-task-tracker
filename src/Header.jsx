@@ -125,7 +125,7 @@ export default function Header(props) {
       ...prevValues,
       [name]: checked ? "checked" : "unchecked",
     }));
-    console.log(maps)
+    console.log(maps);
   }
 
   return (
@@ -254,111 +254,113 @@ export default function Header(props) {
             </div>
           </div>
           <div className="name-popups">
-            <div className="trader-name-popup prapor-name">Prapor</div>
-            <div className="trader-name-popup therapist">Therapist</div>
-            <div className="trader-name-popup fence">Fence</div>
-            <div className="trader-name-popup skier">Skier</div>
-            <div className="trader-name-popup peacekeeper">Peacekeeper</div>
-            <div className="trader-name-popup mechanic">Mechanic</div>
-            <div className="trader-name-popup ragman">Ragman</div>
-            <div className="trader-name-popup jaeger">Jaeger</div>
-            <div className="trader-name-popup lightkeeper">Lightkeeper</div>
+            <div className={traders[0] ? "trader-name-popup prapor" : "trader-name-popup prapor deactivated"}>Prapor</div>
+            <div className={traders[1] ? "trader-name-popup therapist" : "trader-name-popup therapist deactivated"}>Therapist</div>
+            <div className={traders[2] ? "trader-name-popup fence" : "trader-name-popup fence deactivated"}>Fence</div>
+            <div className={traders[3] ? "trader-name-popup skier" : "trader-name-popup skier deactivated"}>Skier</div>
+            <div className={traders[4] ? "trader-name-popup peacekeeper" : "trader-name-popup peacekeeper deactivated"}>Peacekeeper</div>
+            <div className={traders[5] ? "trader-name-popup mechanic" : "trader-name-popup mechanic deactivated"}>Mechanic</div>
+            <div className={traders[6] ? "trader-name-popup ragman" : "trader-name-popup ragman deactivated"}>Ragman</div>
+            <div className={traders[7] ? "trader-name-popup jaeger" : "trader-name-popup jaeger deactivated"}>Jaeger</div>
+            <div className={traders[8] ? "trader-name-popup lightkeeper" : "trader-name-popup lightkeeper deactivated"}>Lightkeeper</div>
           </div>
         </div>
-      </div>
-      <div className="map-filter">
-        <input
-          type="checkbox"
-          id="Factory"
-          name="Factory"
-          onChange={handleCheckbox}
-          checked={maps["Factory"] === "checked"}
-        ></input>
-        <label for="Factory">Factory</label>
-        <input
-          type="checkbox"
-          id="Night Factory"
-          name="Night Factory"
-          onChange={handleCheckbox}
-          checked={maps["Night Factory"] === "checked"}
-        ></input>
-        <label for="Night Factory">Night Factory</label>
-        <input
-          type="checkbox"
-          id="Customs"
-          name="Customs"
-          onChange={handleCheckbox}
-          checked={maps["Customs"] === "checked"}
-        ></input>
-        <label for="Customs">Customs</label>
-        <input
-          type="checkbox"
-          id="Woods"
-          name="Woods"
-          onChange={handleCheckbox}
-          checked={maps["Woods"] === "checked"}
-        ></input>
-        <label for="Woods">Woods</label>
-        <input
-          type="checkbox"
-          id="Shoreline"
-          name="Shoreline"
-          onChange={handleCheckbox}
-          checked={maps["Shoreline"] === "checked"}
-        ></input>
-        <label for="Shoreline">Shoreline</label>
-      </div>
-      <div className="map-filter-2">
-        <input
-          type="checkbox"
-          id="Interchange"
-          name="Interchange"
-          onChange={handleCheckbox}
-          checked={maps["Interchange"] === "checked"}
-        ></input>
-        <label for="Interchange">Interchange</label>
-        <input
-          type="checkbox"
-          id="Reserve"
-          name="Reserve"
-          onChange={handleCheckbox}
-          checked={maps["Reserve"] === "checked"}
-        ></input>
-        <label for="Reserve">Reserve</label>
-        <input
-          type="checkbox"
-          id="Streets of Tarkov"
-          name="Streets of Tarkov"
-          onChange={handleCheckbox}
-          checked={maps["Streets of Tarkov"] === "checked"}
-        ></input>
-        <label for="Streets of Tarkov">Streets of Tarkov</label>
-        <input
-          type="checkbox"
-          id="Lighthouse"
-          name="Lighthouse"
-          onChange={handleCheckbox}
-          checked={maps["Lighthouse"] === "checked"}
-        ></input>
-        <label for="Lighthouse">Lighthouse</label>
-        <input
-          type="checkbox"
-          id="The Lab"
-          name="The Lab"
-          onChange={handleCheckbox}
-          checked={maps["The Lab"] === "checked"}
-        ></input>
-        <label for="The Lab">The Lab</label>
-      </div>
-      <div className="map-filter-3">
-      <input
-          type="checkbox"
-          id="Any"
-          name="Any"
-          onChange={handleCheckbox}
-          checked={maps["Any"] === "checked"}
-        ></input>
-        <label for="Any">Any</label>
+        <div className="map-box">
+        <div className="map-filter">
+          <input
+            type="checkbox"
+            id="Factory"
+            name="Factory"
+            onChange={handleCheckbox}
+            checked={maps["Factory"] === "checked"}
+          ></input>
+          <label for="Factory">Factory</label>
+          <input
+            type="checkbox"
+            id="Night Factory"
+            name="Night Factory"
+            onChange={handleCheckbox}
+            checked={maps["Night Factory"] === "checked"}
+          ></input>
+          <label for="Night Factory">Night Factory</label>
+          <input
+            type="checkbox"
+            id="Customs"
+            name="Customs"
+            onChange={handleCheckbox}
+            checked={maps["Customs"] === "checked"}
+          ></input>
+          <label for="Customs">Customs</label>
+          <input
+            type="checkbox"
+            id="Woods"
+            name="Woods"
+            onChange={handleCheckbox}
+            checked={maps["Woods"] === "checked"}
+          ></input>
+          <label for="Woods">Woods</label>
+          <input
+            type="checkbox"
+            id="Shoreline"
+            name="Shoreline"
+            onChange={handleCheckbox}
+            checked={maps["Shoreline"] === "checked"}
+          ></input>
+          <label for="Shoreline">Shoreline</label>
+        </div>
+        <div className="map-filter-2">
+          <input
+            type="checkbox"
+            id="Interchange"
+            name="Interchange"
+            onChange={handleCheckbox}
+            checked={maps["Interchange"] === "checked"}
+          ></input>
+          <label for="Interchange">Interchange</label>
+          <input
+            type="checkbox"
+            id="Reserve"
+            name="Reserve"
+            onChange={handleCheckbox}
+            checked={maps["Reserve"] === "checked"}
+          ></input>
+          <label for="Reserve">Reserve</label>
+          <input
+            type="checkbox"
+            id="Streets of Tarkov"
+            name="Streets of Tarkov"
+            onChange={handleCheckbox}
+            checked={maps["Streets of Tarkov"] === "checked"}
+          ></input>
+          <label for="Streets of Tarkov">Streets of Tarkov</label>
+          <input
+            type="checkbox"
+            id="Lighthouse"
+            name="Lighthouse"
+            onChange={handleCheckbox}
+            checked={maps["Lighthouse"] === "checked"}
+          ></input>
+          <label for="Lighthouse">Lighthouse</label>
+          <input
+            type="checkbox"
+            id="The Lab"
+            name="The Lab"
+            onChange={handleCheckbox}
+            checked={maps["The Lab"] === "checked"}
+          ></input>
+          <label for="The Lab">The Lab</label>
+        </div>
+        <div className="map-filter-3">
+          <input
+            type="checkbox"
+            id="Any"
+            name="Any"
+            onChange={handleCheckbox}
+            checked={maps["Any"] === "checked"}
+          ></input>
+          <label for="Any">Any</label>
+        </div>
+        </div>
       </div>
     </div>
   );
