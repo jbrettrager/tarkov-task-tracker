@@ -27,6 +27,8 @@ export default function Header(props) {
   const repArray = props.props[6];
   const maps = props.props[7];
   const setMaps = props.props[8];
+  const isEOD = props.props[9];
+  const setIsEOD = props.props[10];
   const [levelIcon, setLevelIcon] = useState(rank1Icon);
   function handleSearch(e) {
     setSearchText(e.target.value);
@@ -127,12 +129,131 @@ export default function Header(props) {
     }));
     console.log(maps);
   }
+  function handleRadio(e) {
+    console.log(e.target.value);
+    if (e.target.value === "standard" && isEOD === true) {
+      setIsEOD(false);
+      repArray[1](Math.round((repArray[0] - 0.25)*100)/100);
+      repArray[3](Math.round((repArray[2] - 0.25)*100)/100);
+      repArray[5](Math.round((repArray[4] - 0.25)*100)/100);
+      repArray[7](Math.round((repArray[6] - 0.25)*100)/100);
+      repArray[9](Math.round((repArray[8] - 0.25)*100)/100);
+      repArray[11](Math.round((repArray[10] - 0.25)*100)/100);
+      repArray[13](Math.round((repArray[12] - 0.25)*100)/100);
+      repArray[15](Math.round((repArray[14] - 0.25)*100)/100);
+    }
+    if (e.target.value === "EOD" && isEOD === false) {
+      setIsEOD(true);
+      repArray[1](Math.round((repArray[0] + 0.25)*100)/100);
+      repArray[3](Math.round((repArray[2] + 0.25)*100)/100);
+      repArray[5](Math.round((repArray[4] + 0.25)*100)/100);
+      repArray[7](Math.round((repArray[6] + 0.25)*100)/100);
+      repArray[9](Math.round((repArray[8] + 0.25)*100)/100);
+      repArray[11](Math.round((repArray[10] + 0.25)*100)/100);
+      repArray[13](Math.round((repArray[12] + 0.25)*100)/100);
+      repArray[15](Math.round((repArray[14] + 0.25)*100)/100);
+    }
+  }
+
+  function handleChangeRep(e) {
+    console.log(e.target.className.split(" "))
+    let trader = e.target.className.split(" ")[1]
+    let value = e.target.className.split(" ")[0]
+    if (trader === "prapor") {
+      if (value === "one") {
+        repArray[1](Math.round((repArray[0] + 0.01)*100)/100)
+      }
+      if (value === "two") {
+        repArray[1](Math.round((repArray[0] + 0.02)*100)/100)
+      }
+    }
+    if (trader === "therapist") {
+      if (value === "one") {
+        repArray[3](Math.round((repArray[2] + 0.01)*100)/100)
+      }
+      if (value === "two") {
+        repArray[3](Math.round((repArray[2] + 0.02)*100)/100)
+      }
+    }
+    if (trader === "skier") {
+      if (value === "one") {
+        repArray[5](Math.round((repArray[4] + 0.01)*100)/100)
+      }
+      if (value === "two") {
+        repArray[5](Math.round((repArray[4] + 0.02)*100)/100)
+      }
+    }
+    if (trader === "fence") {
+      if (value === "one") {
+        repArray[7](Math.round((repArray[6] + 0.01)*100)/100)
+      }
+      if (value === "two") {
+        repArray[7](Math.round((repArray[6] + 0.02)*100)/100)
+      }
+    }
+    if (trader === "peacekeeper") {
+      if (value === "one") {
+        repArray[9](Math.round((repArray[8] + 0.01)*100)/100)
+      }
+      if (value === "two") {
+        repArray[9](Math.round((repArray[8] + 0.02)*100)/100)
+      }
+    }
+    if (trader === "ragman") {
+      if (value === "one") {
+        repArray[11](Math.round((repArray[10] + 0.01)*100)/100)
+      }
+      if (value === "two") {
+        repArray[11](Math.round((repArray[10] + 0.02)*100)/100)
+      }
+    }
+    if (trader === "mechanic") {
+      if (value === "one") {
+        repArray[13](Math.round((repArray[12] + 0.01)*100)/100)
+      }
+      if (value === "two") {
+        repArray[13](Math.round((repArray[12] + 0.02)*100)/100)
+      }
+    }
+    if (trader === "jaeger") {
+      if (value === "one") {
+        repArray[15](Math.round((repArray[14] + 0.01)*100)/100)
+      }
+      if (value === "two") {
+        repArray[15](Math.round((repArray[14] + 0.02)*100)/100)
+      }
+    }
+  }
 
   return (
     <div className="header full">
       <h2>Escape From Tarkov Task Tracker</h2>
       <div className="search-area">
         <div className="text-search-box">
+          <div className="eod">
+            <label for="radio-label standard">
+              <input
+                type="radio"
+                className="radio-input"
+                onChange={handleRadio}
+                id="standard"
+                value="standard"
+                checked={isEOD ? false : true}
+              ></input>
+              Non-EOD
+            </label>
+            <label for="radio-label standard">
+              <input
+                type="radio"
+                className="radio-input"
+                onChange={handleRadio}
+                id="EOD"
+                value="EOD"
+                checked={isEOD ? true : false}
+              ></input>
+              EOD
+            </label>
+          </div>
           <label labelFor="search-text" className="search-label">
             Task by Name:
           </label>
@@ -254,112 +375,238 @@ export default function Header(props) {
             </div>
           </div>
           <div className="name-popups">
-            <div className={traders[0] ? "trader-name-popup prapor" : "trader-name-popup prapor deactivated"}>Prapor</div>
-            <div className={traders[1] ? "trader-name-popup therapist" : "trader-name-popup therapist deactivated"}>Therapist</div>
-            <div className={traders[2] ? "trader-name-popup fence" : "trader-name-popup fence deactivated"}>Fence</div>
-            <div className={traders[3] ? "trader-name-popup skier" : "trader-name-popup skier deactivated"}>Skier</div>
-            <div className={traders[4] ? "trader-name-popup peacekeeper" : "trader-name-popup peacekeeper deactivated"}>Peacekeeper</div>
-            <div className={traders[5] ? "trader-name-popup mechanic" : "trader-name-popup mechanic deactivated"}>Mechanic</div>
-            <div className={traders[6] ? "trader-name-popup ragman" : "trader-name-popup ragman deactivated"}>Ragman</div>
-            <div className={traders[7] ? "trader-name-popup jaeger" : "trader-name-popup jaeger deactivated"}>Jaeger</div>
-            <div className={traders[8] ? "trader-name-popup lightkeeper" : "trader-name-popup lightkeeper deactivated"}>Lightkeeper</div>
+            <div className="name-rep-box">
+              <div
+                className={
+                  traders[0]
+                    ? "trader-name-popup prapor"
+                    : "trader-name-popup prapor deactivated"
+                }
+              >
+                Prapor
+              </div>
+              <div className="rep-box">
+                <div className="one prapor" onClick={handleChangeRep}>+0.01</div>
+                <div className="two prapor" onClick={handleChangeRep}>+0.02</div>
+              </div>
+            </div>
+            <div className="name-rep-box">
+              <div
+                className={
+                  traders[1]
+                    ? "trader-name-popup therapist"
+                    : "trader-name-popup therapist deactivated"
+                }
+              >
+                Therapist
+              </div>
+              <div className="rep-box">
+                <div className="one therapist" onClick={handleChangeRep}>+0.01</div>
+                <div className="two therapist" onClick={handleChangeRep}>+0.02</div>
+              </div>
+            </div>
+            <div className="name-rep-box">
+              <div
+                className={
+                  traders[2]
+                    ? "trader-name-popup fence"
+                    : "trader-name-popup fence deactivated"
+                }
+              >
+                Fence
+              </div>
+              <div className="rep-box">
+                <div className="one fence" onClick={handleChangeRep}>+0.01</div>
+                <div className="two fence" onClick={handleChangeRep}>+0.02</div>
+              </div>
+            </div>
+            <div className="name-rep-box">
+              <div
+                className={
+                  traders[3]
+                    ? "trader-name-popup skier"
+                    : "trader-name-popup skier deactivated"
+                }
+              >
+                Skier
+              </div>
+              <div className="rep-box">
+                <div className="one skier" onClick={handleChangeRep}>+0.01</div>
+                <div className="two skier" onClick={handleChangeRep}>+0.02</div>
+              </div>
+            </div>
+            <div className="name-rep-box">
+              <div
+                className={
+                  traders[4]
+                    ? "trader-name-popup peacekeeper"
+                    : "trader-name-popup peacekeeper deactivated"
+                }
+              >
+                Peacekeeper
+              </div>
+              <div className="rep-box">
+                <div className="one peacekeeper" onClick={handleChangeRep}>+0.01</div>
+                <div className="two peacekeeper" onClick={handleChangeRep}>+0.02</div>
+              </div>
+            </div>
+            <div className="name-rep-box">
+              <div
+                className={
+                  traders[5]
+                    ? "trader-name-popup mechanic"
+                    : "trader-name-popup mechanic deactivated"
+                }
+              >
+                Mechanic
+              </div>
+              <div className="rep-box">
+                <div className="one mechanic" onClick={handleChangeRep}>+0.01</div>
+                <div className="two mechanic" onClick={handleChangeRep}>+0.02</div>
+              </div>
+            </div>
+            <div className="name-rep-box">
+              <div
+                className={
+                  traders[6]
+                    ? "trader-name-popup ragman"
+                    : "trader-name-popup ragman deactivated"
+                }
+              >
+                Ragman
+              </div>
+              <div className="rep-box">
+                <div className="one ragman" onClick={handleChangeRep}>+0.01</div>
+                <div className="two ragman" onClick={handleChangeRep}>+0.02</div>
+              </div>
+            </div>
+            <div className="name-rep-box">
+              <div
+                className={
+                  traders[7]
+                    ? "trader-name-popup jaeger"
+                    : "trader-name-popup jaeger deactivated"
+                }
+              >
+                Jaeger
+              </div>
+              <div className="rep-box">
+                <div className="one jaeger" onClick={handleChangeRep}>+0.01</div>
+                <div className="two jaeger" onClick={handleChangeRep}>+0.02</div>
+              </div>
+            </div>
+            <div className="name-rep-box">
+              <div
+                className={
+                  traders[8]
+                    ? "trader-name-popup lightkeeper"
+                    : "trader-name-popup lightkeeper deactivated"
+                }
+              >
+                Lightkeeper
+              </div>
+              <div className="rep-box">
+                <div className="one">-</div>
+                <div className="two">-</div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="map-box">
-        <div className="map-filter">
-          <input
-            type="checkbox"
-            id="Factory"
-            name="Factory"
-            onChange={handleCheckbox}
-            checked={maps["Factory"] === "checked"}
-          ></input>
-          <label for="Factory">Factory</label>
-          <input
-            type="checkbox"
-            id="Night Factory"
-            name="Night Factory"
-            onChange={handleCheckbox}
-            checked={maps["Night Factory"] === "checked"}
-          ></input>
-          <label for="Night Factory">Night Factory</label>
-          <input
-            type="checkbox"
-            id="Customs"
-            name="Customs"
-            onChange={handleCheckbox}
-            checked={maps["Customs"] === "checked"}
-          ></input>
-          <label for="Customs">Customs</label>
-          <input
-            type="checkbox"
-            id="Woods"
-            name="Woods"
-            onChange={handleCheckbox}
-            checked={maps["Woods"] === "checked"}
-          ></input>
-          <label for="Woods">Woods</label>
-          <input
-            type="checkbox"
-            id="Shoreline"
-            name="Shoreline"
-            onChange={handleCheckbox}
-            checked={maps["Shoreline"] === "checked"}
-          ></input>
-          <label for="Shoreline">Shoreline</label>
-        </div>
-        <div className="map-filter-2">
-          <input
-            type="checkbox"
-            id="Interchange"
-            name="Interchange"
-            onChange={handleCheckbox}
-            checked={maps["Interchange"] === "checked"}
-          ></input>
-          <label for="Interchange">Interchange</label>
-          <input
-            type="checkbox"
-            id="Reserve"
-            name="Reserve"
-            onChange={handleCheckbox}
-            checked={maps["Reserve"] === "checked"}
-          ></input>
-          <label for="Reserve">Reserve</label>
-          <input
-            type="checkbox"
-            id="Streets of Tarkov"
-            name="Streets of Tarkov"
-            onChange={handleCheckbox}
-            checked={maps["Streets of Tarkov"] === "checked"}
-          ></input>
-          <label for="Streets of Tarkov">Streets of Tarkov</label>
-          <input
-            type="checkbox"
-            id="Lighthouse"
-            name="Lighthouse"
-            onChange={handleCheckbox}
-            checked={maps["Lighthouse"] === "checked"}
-          ></input>
-          <label for="Lighthouse">Lighthouse</label>
-          <input
-            type="checkbox"
-            id="The Lab"
-            name="The Lab"
-            onChange={handleCheckbox}
-            checked={maps["The Lab"] === "checked"}
-          ></input>
-          <label for="The Lab">The Lab</label>
-        </div>
-        <div className="map-filter-3">
-          <input
-            type="checkbox"
-            id="Any"
-            name="Any"
-            onChange={handleCheckbox}
-            checked={maps["Any"] === "checked"}
-          ></input>
-          <label for="Any">Any</label>
-        </div>
+          <div className="map-filter">
+            <input
+              type="checkbox"
+              id="Factory"
+              name="Factory"
+              onChange={handleCheckbox}
+              checked={maps["Factory"] === "checked"}
+            ></input>
+            <label for="Factory">Factory</label>
+            <input
+              type="checkbox"
+              id="Night Factory"
+              name="Night Factory"
+              onChange={handleCheckbox}
+              checked={maps["Night Factory"] === "checked"}
+            ></input>
+            <label for="Night Factory">Night Factory</label>
+            <input
+              type="checkbox"
+              id="Customs"
+              name="Customs"
+              onChange={handleCheckbox}
+              checked={maps["Customs"] === "checked"}
+            ></input>
+            <label for="Customs">Customs</label>
+            <input
+              type="checkbox"
+              id="Woods"
+              name="Woods"
+              onChange={handleCheckbox}
+              checked={maps["Woods"] === "checked"}
+            ></input>
+            <label for="Woods">Woods</label>
+            <input
+              type="checkbox"
+              id="Shoreline"
+              name="Shoreline"
+              onChange={handleCheckbox}
+              checked={maps["Shoreline"] === "checked"}
+            ></input>
+            <label for="Shoreline">Shoreline</label>
+          </div>
+          <div className="map-filter-2">
+            <input
+              type="checkbox"
+              id="Interchange"
+              name="Interchange"
+              onChange={handleCheckbox}
+              checked={maps["Interchange"] === "checked"}
+            ></input>
+            <label for="Interchange">Interchange</label>
+            <input
+              type="checkbox"
+              id="Reserve"
+              name="Reserve"
+              onChange={handleCheckbox}
+              checked={maps["Reserve"] === "checked"}
+            ></input>
+            <label for="Reserve">Reserve</label>
+            <input
+              type="checkbox"
+              id="Streets of Tarkov"
+              name="Streets of Tarkov"
+              onChange={handleCheckbox}
+              checked={maps["Streets of Tarkov"] === "checked"}
+            ></input>
+            <label for="Streets of Tarkov">Streets of Tarkov</label>
+            <input
+              type="checkbox"
+              id="Lighthouse"
+              name="Lighthouse"
+              onChange={handleCheckbox}
+              checked={maps["Lighthouse"] === "checked"}
+            ></input>
+            <label for="Lighthouse">Lighthouse</label>
+            <input
+              type="checkbox"
+              id="The Lab"
+              name="The Lab"
+              onChange={handleCheckbox}
+              checked={maps["The Lab"] === "checked"}
+            ></input>
+            <label for="The Lab">The Lab</label>
+          </div>
+          <div className="map-filter-3">
+            <input
+              type="checkbox"
+              id="Any"
+              name="Any"
+              onChange={handleCheckbox}
+              checked={maps["Any"] === "checked"}
+            ></input>
+            <label for="Any">Any</label>
+          </div>
         </div>
       </div>
     </div>

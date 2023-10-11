@@ -33,6 +33,7 @@ function App() {
     true,
     true,
   ]);
+  const [isEOD, setIsEOD] = useState(false)
   const [praporRep, setPraporRep] = useState(0.0);
   const [therapistRep, setTherapistRep] = useState(0.0);
   const [skierRep, setSkierRep] = useState(0.0);
@@ -72,6 +73,7 @@ function App() {
           setTraders,
           repArray,
           maps, setMaps
+          ,isEOD, setIsEOD
         ]}
       />
       <MainTable

@@ -148,10 +148,50 @@ li {
   transition: all 0.3s ease;
 }
 
+.one {
+  text-align: center;
+  width: 2.1rem;
+  font-size: 0.9rem;
+  border: 2px solid #8f8e8e;
+  background-color: black;
+  margin-right: 10px;
+}
+
+.two {
+  text-align: center;
+  width: 2.1rem;
+  font-size: 0.9rem;
+  border: 2px solid #8f8e8e;
+  background-color: black;
+}
+
 .deactivated {
   opacity: 0;
 }
 
+
+
+.rep-box {
+  margin-top:5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.eod {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.radio-label {
+  display: inline-block;  
+  margin-left: 10px;
+} 
+
+.radio-input{
+  display: inline-block;
+}
 .image-container {
   display: flex;
   align-items: center;
